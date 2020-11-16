@@ -1,5 +1,5 @@
 use warnings;
-use strict;
+use strict;	#nenhuma biblioteca de regex
 
 my @regex = (
 	'\(\d{2}\)9\d{4}\-\d{4}', #numero de celular com hífen e ddd
@@ -8,7 +8,7 @@ my @regex = (
 );
 while(<>){
 	for my $regex (@regex){
-		s/$regex/-Conteudo pessoal-/g;
+		s/$regex/-Conteudo pessoal-/g; #aplica a regex em $_ e substitui por "-conteudo pessoal-"
 	}
-	print;
+	print; #print $_
 }
