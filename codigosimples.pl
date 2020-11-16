@@ -9,6 +9,6 @@ my @palavras= (
 	   'muito facil nao e?'
 	);
 
-foreach(@palavras){
-   print("$_ \n") if($_ =~ /ex/);
+foreach(@palavras){ #para cada palavra no array
+   print("$_ \n") if($_ =~ /ex/); #se for encontrado a sequencia de caracteres "ex" nesta palavra, a imprima na tela
 }
